@@ -1,0 +1,121 @@
+@use '../utils/' as *;
+
+.grid__2_cols{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @include breakpoint-down(medium){
+        grid-template-columns: repeat(1, 1fr);
+    }
+    @include breakpoint(xxmedium){
+        gap: 5rem;
+    }
+    @include breakpoint(xlarge){
+        gap: 4rem;
+    }
+}
+.grid__3_cols{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: rem(40);
+            @include breakpoint-down(tablet){
+                gap: rem(20);
+            }
+            @include breakpoint-down(extramedium){
+                gap: rem(10);
+            }
+            @include breakpoint-down(extrasmall){
+                grid-template-columns: repeat(1, 1fr);
+                gap: rem(5);
+            }
+}
+.grid__4_cols{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    @include breakpoint-down(medium){
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include breakpoint-down(extrasmall){
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.mega_menu_grid_4{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(50);
+    @include breakpoint-down(tablet){
+        gap: rem(30);
+    }
+    @include breakpoint-down(xsmall){
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include breakpoint-down(extrasmall){
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.grid-2-col {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+
+    @include breakpoint-down(medium) {
+        grid-template-columns: 1fr;
+    }
+}
+.grid-2-colequal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @include breakpoint-down(medium) {
+        grid-template-columns: 1fr;
+    }
+}
+.grid-2-nonequal {
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+
+    @include breakpoint-down(medium) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.gap-10 {
+    gap: 10rem;
+    @include breakpoint-down(medium) {
+        gap: 5rem;
+    }
+}
+.grid-3-col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @include breakpoint-down(small) {
+        grid-template-columns: 1fr;
+    }
+}
+.grid-4-col {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    @include breakpoint-down(medium) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @include breakpoint-down(small) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @include breakpoint-down(extrasmall) {
+        grid-template-columns: 1fr;
+    }
+}
+.grid-6-col {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    @include breakpoint-down(medium) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @include breakpoint-down(small) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include breakpoint-down(extrasmall) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

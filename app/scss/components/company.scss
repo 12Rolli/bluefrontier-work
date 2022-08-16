@@ -1,0 +1,332 @@
+@use  '../utils/' as *;
+
+.company__header{
+    position: relative;
+    text-align: center;
+    .company__img{
+    background-image: url(../images/img_company/core/coffee_meeting.webp);
+    filter: opacity(20%);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @include breakpoint-down(tablet){
+        height: 70vh;
+    }
+    }
+    .company__text_center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+    h2{
+        font-size: rem(55);    text-transform: uppercase;
+        margin-bottom: rem(60);
+        @include breakpoint-down(large){font-size: 2rem;
+            margin-bottom: 1.75rem;}
+        @include breakpoint-down(extramedium){
+            font-size: rem(23.2);
+            margin-bottom: 1rem;
+        }
+        @include breakpoint-down(extrasmall){font-size: rem(10);
+        margin-bottom: rem(0);}
+    }
+    p{
+        font-size: rem(24);
+        letter-spacing: 0.02em;
+        margin-top: rem(20) !important;
+        @include breakpoint-down(large){font-size: 1rem;}
+        @include breakpoint-down(extramedium){font-size: 0.58rem;margin-top: 0 !important;}
+    }
+}
+}
+.orange{
+    color: var(--orange);
+    opacity: 1;
+    animation: blink 0.7s infinite;
+}
+.blue{
+    color: #00d4f7;
+}
+.big{
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+    padding: 0 10%;
+    margin-bottom: rem(15);
+    @include breakpoint-down(extramedium){font-size: 0.75rem;}
+}
+.company__bloc_2_text_1{
+    h2{
+        margin: rem(20) 0 rem(40);
+        line-height: 1em;
+        font-size: rem(55);    
+        text-transform: uppercase;
+        margin-bottom: rem(60);
+        @include breakpoint-down(large){font-size: rem(40);margin-bottom: 1.75rem;}
+        @include breakpoint-down(extramedium){
+        font-size: rem(23.2);margin-bottom: 1rem;
+        }
+    }
+}
+.company__bloc_1{
+    .company__elt{
+        padding: rem(15);
+        margin: rem(10);
+        text-align: center;
+        h1{
+            text-transform: uppercase;
+            font-weight: 700;
+            @include breakpoint-down(large){font-size: 2rem;
+                margin-bottom: 1.75rem;}
+            @include breakpoint-down(extramedium){
+                margin-bottom: 1rem;
+            }
+            @include breakpoint-down(extrasmall){font-size: rem(20);}
+        }
+        .bigger{
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+            @include breakpoint-down(extramedium){font-size: 1.2rem;}
+            @include breakpoint-down(extrasmall){font-size: 0.78rem;}
+        }
+        iframe{
+            margin: 2rem 0;
+            max-width: 900px;
+            width: 100%; height: 505.832px;
+            pointer-events: all !important;
+            @include breakpoint-down (extramedium){height: 200px;}
+            }
+    }
+}
+.company__bloc_2{
+    background-color: var(--light);
+    text-align: center;
+    &_text{
+    padding: rem(60) 0;
+        .top-left-angle{
+            // border-style: solid;
+            top: -59px;
+            position: relative;
+        }
+    }
+}
+.company__bloc_3{
+    text-align: center;
+    background: #212121;
+    color: var(--white);
+    &_text{
+        padding: rem(60) 0;
+        @include breakpoint-down(medium){
+            padding-bottom: 0;
+        }
+        p{
+            margin-bottom: rem(35);
+            @include breakpoint-down(extramedium){
+                margin-bottom: rem(25);
+            } 
+            @include breakpoint-down(extrasmall){
+                margin-bottom: rem(10);
+            }
+            .our_button{
+                text-transform: uppercase;
+                border: 1px solid #fff !important;
+                display: inline-block;
+                padding: rem(15) rem(20);
+                color: #fff;
+                letter-spacing: 0.08em;
+                line-height: normal;
+                background: transparent;
+                @include breakpoint-down(extramedium){
+                    padding: rem(8) rem(10);
+                    font-size: 0.6rem;
+                } 
+                @include breakpoint-down(extrasmall){
+                    font-size: 0.5rem;
+                }
+            }
+        }
+    }
+    &_img{
+        @include breakpoint-down(large){
+            margin: 0 5rem;
+        }
+        @include breakpoint-down(medium){
+            margin: 0 3rem;
+        }
+        @include breakpoint-down(small){
+            margin: 0 1rem;
+        }
+        .list{
+                display: inline-flex;
+                justify-content: space-between;
+                list-style: none;
+            li{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+.company__bloc_4{
+    text-align: center;
+    background: hsl(0, 7%, 87%);
+    &_elts{
+        margin: 0 6.25rem;
+        padding: 0 0.9375rem 5rem;
+        @include breakpoint-down(tablet){
+            margin: 0 auto;
+            padding-bottom: 2rem;
+        }
+        @include breakpoint-down(extramedium){
+            padding: 0 0.375rem 5rem;
+        }
+        .grid__3_cols{
+            .company__bloc_4_cards{
+                background: var(--white);
+                text-align: left;
+                height: fit-content;
+                &_link{
+                    text-decoration: none;     
+                    display: inline-block;
+                    img{
+                        width: 100%;
+                    }
+                }
+                &_text{
+                    padding: 1.875rem 1.562rem;
+                    display: flex;
+                    flex-direction: column;
+                    @include breakpoint-down(extramedium){
+                        padding: 0.875rem 0.562rem;
+                    }
+                    .h3{
+                        font-size: 1.4rem;
+                        line-height: 1;
+                        margin-bottom: 1.5rem;
+                        color: var(--black);
+                        text-decoration: underline;
+                        @include breakpoint-down(tablet){
+                        margin-bottom: 1.2rem;
+                        font-size: 1.2rem;
+                        }
+                        @include breakpoint-down(extramedium){
+                            font-size: 0.85rem;
+                            margin-bottom: 0.85rem;
+                        }
+                        @include breakpoint-down(extrasmall){
+                            font-size: 0.65rem;
+                            margin-bottom: 0.5rem;
+                        }
+                    }
+                    p{
+                        font-size: 1rem;
+                        line-height: 1.4;
+                        margin-bottom: 1rem;
+                        color: #6E6E6E;
+                        @include breakpoint-down(tablet){
+                            margin-bottom: 0.85rem;
+                            font-size: 0.6rem;
+                        }
+                        @include breakpoint-down(extrasmall){
+                            font-size: 0.45rem;
+                            margin-bottom: 0.5rem;
+                        }
+                    }
+                    .view{
+                        align-self: flex-end;
+                        text-transform: uppercase;
+                        border: 1px solid var(--bluefair) !important;
+                        display: inline-block;
+                        padding: rem(15) rem(60);
+                        margin-top: rem(15);
+                        color: var(--bluefair);
+                        letter-spacing: 0.08em;
+                        line-height: normal;
+                        font-size: rem(20);
+                        @include breakpoint-down(tablet){
+                            padding: rem(12) rem(40);
+                            font-size: 0.85rem;
+                        }
+                        @include breakpoint-down(extramedium){
+                            padding: rem(8) rem(10);
+                            font-size: 0.6rem;
+                        } 
+                        @include breakpoint-down(extrasmall){
+                            font-size: 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.company__bloc_5{
+    text-align: center;
+    .company__bloc_3_text{
+        // padding-bottom: rem(15);
+        h2{
+            margin-bottom: 1.25rem;
+        }
+    }
+    .grid__3_col{
+        img{
+            width: 10%;
+            @include breakpoint-down(extramedium){
+                width: 12%;
+            }
+            @include breakpoint-down(small){
+                width: 20%;
+            }
+            @include breakpoint-down(extrasmall){
+                width: 25%;
+            }
+        }
+    }
+}
+
+.company__bloc_6{
+    background-color: var(--bluefair);
+    color: var(--white);
+    &_bloc{
+        margin: 0 6.25rem;
+        @include breakpoint-down(tablet){
+            margin: 0 1.25rem;
+        }
+    }
+    &_elts{
+        .texte1{
+            padding: 20px 40px 20px 0;
+            @include breakpoint-down(tablet){
+                padding: 10px 20px 10px 0;
+            }
+            h3{
+                font-size: rem(30);
+                line-height: rem(24);
+                font-weight: 600;
+                margin-bottom: rem(20);
+                @include breakpoint-down(medium){
+                    font-size: rem(20);
+                }
+            }
+            p{margin: rem(20) 0;
+                @include breakpoint-down(medium){
+                    font-size: rem(10);
+                }
+            }
+        }
+    }
+    &_img{
+        img{
+            width: 100%;
+        }
+    }
+    .blocs{
+        @include breakpoint-down(extramedium){
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}

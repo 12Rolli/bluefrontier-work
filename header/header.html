@@ -1,0 +1,132 @@
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="../dist/style.css" />
+<script defer src="../dist/script.js"></script>
+
+
+<header class="head">
+    <div>
+        <div class="row v__center">
+            <div class="head__item item__left">
+                <div class="logo">
+                    <a href="#"><img src="../images/img/blue-frontier-logo-black2x.webp" alt="blue-frontier-logo-black2x"></a>
+                </div>
+            </div>
+
+            <!-- menu start here  -->
+            <div class="head__item item__center">
+                <nav class="menu">
+                    <ul class="menu__main">
+                        <li class="menu__item__has_children active">
+                            <a class="border" href="#">Company</a>
+                            <div class="sub__menu single-column">
+                                <ul>
+                                    <li><a href="../company/company.html">Meet The Team</a>
+                                    </li>
+                                    <li><a href="../company/company.html">Blog</a>
+                                    </li>
+                                    <li><a href="../company/company.html">Careers</a>
+                                    </li>
+                                    <li><a href="../company/company.html">Accreditations & Awards</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a class="border" href="#">Our Work</a></li>
+                        <li class="menu__item__has_children">
+                            <a class="border" href="#">Service</a>
+                            <ul class="sub__menu1 mega_menu mega_menu_grid_4">
+                                <li><a class="sub__title" href="../service_consultancy/serv_consultancy.html">Consultancy</a>
+                                    <ul class="sub__mega_menu">
+                                        <li><a href="#">GDPR Consultancy</a></li>
+                                        <li><a href="#">ISO Consultancy</a></li>
+                                        <li><a href="#">IT Consultancy</a></li>
+                                        <li><a href="#">Microsoft Power BI</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="sub__title" href="../service_design/servicedesign.html">Design</a>
+                                    <ul class="sub__mega_menu">
+                                        <li><a href="#">Web Design</a></li>
+                                        <li><a href="#">Video Production</a></li>
+                                        <li><a href="#">Graphic Design</a></li>
+                                        <li><a href="#">UX Design</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="sub__title" href="../service_development/serv_development.html">Development</a>
+                                    <ul class="sub__mega_menu">
+                                        <li><a href="#">Web Development</a></li>
+                                        <li><a href="#">Joomla</a></li>
+                                        <li><a href="#">WordPress</a></li>
+                                        <li><a href="#">Software Development</a></li>
+                                        <li><a href="#">Ecommerce</a></li>
+                                        <li><a href="#">Mobile Apps</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="sub__title" href="../service_digitalmarketing/service_marketing.html">Digital Marketing</a>
+                                    <ul class="sub__mega_menu">
+                                        <li><a href="#">SEO</a></li>
+                                        <li><a href="#">PPC</a></li>
+                                        <li><a href="#">Social Media</a></li>
+                                        <li><a href="#">Content</a></li>
+                                        <li><a href="#">CRO</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="sub__title" href="../service_technical/serv_technical.html">Technical</a>
+                                    <ul class="sub__mega_menu">
+                                        <li><a href="#">IT Support</a></li>
+                                        <li><a href="#">IT Solutions</a></li>
+                                        <li><a href="#">Cloud Services</a></li>
+                                        <li><a href="#">Cyber Security</a></li>
+                                        <li><a href="#">Business Hosting</a></li>
+                                        <li><a href="#">Client Ticket Portal</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="sub__title" href="#">Digital Health</a>
+                                    <ul class="sub__mega_menu">
+                                        <li><a href="#">ISO 13485</a></li>
+                                        <li><a href="#">Working with the NHS</a></li>
+                                        <li><a href="#">Tac Portal</a></li>
+                                        <li><a href="#">Connected Health</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a class="border" href="../blog/blog.html">Latest</a></li>
+                        <li><a class="border" href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <!-- burger -->
+            <nav class="head__item item__center_2">
+                <a href="#" class="burger">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </a>
+            </nav>
+
+            <!-- menu finish here  -->
+            <div class="head__item item__right">
+                <a href="#">02382 354 320</a>
+                <!-- mobile menu trigger -->
+                <div class="mobile-menu-trigger">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<!-- script start -->
+<script>
+    const burger = document.querySelector(".burger")
+const item__center = document.querySelector(".item__center")
+
+burger.addEventListener('click',()=>{
+    item__center.classList.toggle('mobile-menu')
+})
+</script>
+<!-- script end  -->

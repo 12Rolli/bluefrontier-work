@@ -1,0 +1,6 @@
+@use '../utils/' as *;
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,23 @@
+@use '../utils/' as *;
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.flex-line {
+    display: flex;
+    align-self: flex-start;
+    flex-wrap: wrap;
+}
+.gap-1 {
+    gap: 1rem;
+}
+.gap-3 {
+    gap: 3rem;
+}
+.gap-7 {
+    gap: 7rem;
+}
+.gap-5 {
+    gap: 5rem;
+}
